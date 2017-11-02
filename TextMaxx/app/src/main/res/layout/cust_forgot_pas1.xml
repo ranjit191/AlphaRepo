@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="5dp" />-->
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/cross" />-->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:alpha=".6"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Please enter your register email id"
+            android:textColor="#000000"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />/>
+
+
+        <EditText
+            android:id="@+id/et_payment_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/text"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/shape_login"
+            android:hint="Email Id"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="#BDBDBD"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_payment_amount"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_chat_send"
+            android:padding="10dp"
+            android:text="Submit "
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_cancel2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_marginTop="-15dp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/cross" />
+</RelativeLayout>

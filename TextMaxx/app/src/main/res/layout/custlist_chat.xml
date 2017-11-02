@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_15sdp">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lin_receiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:background="@drawable/receive_msg_bg">
+
+                <TextView
+                    android:id="@+id/tv_mesg_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/iv_image_sent"
+                    android:layout_toRightOf="@+id/iv_image_receive"
+                    android:padding="@dimen/_10sdp"
+                    android:text="djfkdffkdfddfdf dff fd d fff df fdfddfdfdfd dffd fd dfdfdfdfdffd df dffddfdddfdfdfd fdf dfdfdfdfdf df fd f f f   f dffd  dfdf df df df d ffd fd dfd df d fdf df df fd dffd df df fd df f"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_image_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/lin_receiv"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@drawable/chat_user_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lin_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/user_2_chatbox">
+
+                <TextView
+                    android:id="@+id/tv_mesg_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+
+                    android:layout_toLeftOf="@+id/iv_image_sent"
+                    android:layout_toRightOf="@+id/iv_image_receive"
+                    android:padding="@dimen/_10sdp"
+                    android:text="ffd df df fd df f"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_image_sent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/lin_send"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@drawable/chat_user_image" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dateleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rel1"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:drawableLeft="@drawable/calender"
+        android:drawablePadding="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="date left"
+
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/tv_dateright"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rel1"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:drawableLeft="@drawable/calender"
+
+        android:drawablePadding="@dimen/_5sdp"
+
+        android:padding="@dimen/_5sdp"
+        android:text="date right"
+        android:textSize="@dimen/_10sdp" />
+
+
+</RelativeLayout>

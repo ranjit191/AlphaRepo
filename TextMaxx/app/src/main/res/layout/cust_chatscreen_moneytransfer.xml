@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="5dp" />-->
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/cross" />-->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:alpha=".6"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Please select card details"
+            android:textColor="#000000"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />/>
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+
+            android:layout_height="45sp"
+            android:layout_below="@+id/text"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:alpha=".5"
+            android:background="@drawable/shape_login"
+
+            android:padding="10dp"></Spinner>
+
+        <EditText
+            android:id="@+id/et_payment_amount"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_below="@+id/spinner"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:alpha=".8"
+            android:background="@drawable/shape_login"
+            android:hint="Payment amount"
+            android:inputType="number"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textColorHint="#BDBDBD"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_payment_amount"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+
+            <Button
+                android:id="@+id/b_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_payment_amount"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="5"
+                android:background="@drawable/shape_cancel"
+                android:padding="10dp"
+                android:text="Cancel "
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/btn_send_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_payment_amount"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="5"
+                android:background="@drawable/shape_chat_send"
+                android:padding="10dp"
+                android:text="Send payment "
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_marginTop="-15dp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/cross" />
+</RelativeLayout>

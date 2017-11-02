@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/shape_dialog"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="5dp" />-->
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/cross" />-->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha=".6"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Send verification for SMS...."
+            android:textColor="#000000"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />/>
+
+
+        <TextView
+            android:id="@+id/et_cell_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:alpha=".8"
+            android:gravity="center"
+            android:text="John Marks"
+            android:textColor="#2085D5"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />/>
+
+        <TextView
+            android:id="@+id/tv_cell_no"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cell_name"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:alpha=".6"
+            android:gravity="center"
+            android:text="+91 -3873939487"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <!--<Spinner-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_cell_no"-->
+        <!--android:layout_marginBottom="@dimen/_10sdp"-->
+        <!--android:background="@drawable/shape_login"-->
+        <!--android:padding="10dp"></Spinner>-->
+        <TextView
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cell_no"
+            android:alpha=".8"
+            android:background="@drawable/shape_lang"
+            android:drawableRight="@drawable/down_icon"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="English"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15sdp" />
+
+        <RelativeLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rb_promo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:alpha=".8"
+                android:text="Promo"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+
+            <RadioButton
+                android:id="@+id/rb_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:alpha=".8"
+                android:checked="true"
+                android:text="Account"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/rb_both"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:alpha=".8"
+                android:text="Both"
+                android:textColor="#000000"
+
+                android:textSize="@dimen/_12sdp"
+
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/btn_sendRequest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_chat_send"
+                android:padding="10dp"
+                android:text="Send "
+
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:id="@+id/b_cancel_varify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_cancel"
+                android:padding="10dp"
+
+                android:text="Cancel"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_marginTop="-15dp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/cross" />
+</RelativeLayout>

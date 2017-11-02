@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/shape_dialog_white"
+        android:orientation="vertical">
+
+        <com.textmaxx.Fonts.PoppinsRegular
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2085D5"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Broadcast"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_18sdp" />
+
+        <EditText
+            android:id="@+id/et_tag_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/shape_dialog_broadcast"
+            android:gravity="start"
+            android:hint="Type a message.."
+            android:maxLines="10"
+            android:minHeight="@dimen/_100sdp"
+            android:padding="@dimen/_10sdp"
+
+            android:scrollbars="vertical"
+            android:textSize="@dimen/_14sdp" />
+
+        <Button
+            android:id="@+id/btn_send_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_tag_msg"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/shape_chat_send"
+            android:padding="@dimen/_10sdp"
+            android:text="send"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_cross_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_marginTop="-15dp"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/cross" />
+
+</RelativeLayout>

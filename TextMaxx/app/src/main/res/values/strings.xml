@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TextMaxxPro</string>
+
+
+    //change password page
+
+    <string name="old_pas">Old Password</string>
+    <string name="new_pas">New Password</string>
+    <string name="confirm_pas">Confirm Password</string>
+    <string name="submit">Submit</string>
+
+    //chat screen
+
+    <string name="type_here">Type a message</string>
+
+    <string name="send">Send</string>
+
+
+</resources>

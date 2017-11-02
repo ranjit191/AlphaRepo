@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp">
+
+
+    <com.textmaxx.Fonts.PoppinsRegular
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:text="Name"
+        android:textSize="@dimen/_15sdp" />
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/_10sdp"
+         />
+
+
+</RelativeLayout>

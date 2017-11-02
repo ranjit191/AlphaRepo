@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+
+
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:text="home"-->
+
+    <!--android:textSize="44dp" />-->
+
+    <TextView
+        android:id="@+id/tv_nomsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha=".4"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:text="No Awaits"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+
+    d
+</LinearLayout>
